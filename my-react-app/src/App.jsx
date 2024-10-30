@@ -1,12 +1,8 @@
-import Header from "./assets/Header";
-import Footer from "./assets/Footer";
-import Food from "./Food";
+import Card from "./Card.jsx";
 
 export default function App() {
   return (
-  <>
-    <Header/>
-    <Food/>
-    <Footer/>
-  </>);
+    <Card />
+    
+  );
 }
