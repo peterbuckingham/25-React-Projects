@@ -1,2 +1,1 @@
-# React-Todo-App
-Todo-app made with React
+# 25 Projects made with REACT
