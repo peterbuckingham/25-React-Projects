@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Syne:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Syne:wght@400..800&display=swap');
-
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'League Gothic', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "League Gothic", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
-
 
 .nav {
   background-color: black;
   height: 100px;
   width: auto;
+  position: relative; /* Ensure nav is on top of the video */
+  z-index: 2; /* Set z-index to make nav above video */
 }
 
 ul {
@@ -35,18 +33,38 @@ ul {
   padding: 5px 15px 5px 15px;
   border: 5px solid white;
   border-radius: 50px;
-
 }
-
 
 .li-img {
   height: auto;
-  width: 200px;
-  margin: 160px 0px 0px 0px;
+  width: 150px;
+  margin: 100px 0px 0px 0px;
   padding: 0px;
- 
+  z-index: 3; /* Ensure this image is above the video */
+  position: relative; /* Needed to apply z-index */
 }
 
-.hero-container {
-  background-color: black;
+.hero-section {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Makes sure the video and image are positioned relative to this container */
+}
+
+.hero-image,
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the content covers the area without distortion */
+  position: absolute; /* Ensures the elements are stacked */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures the video and image are behind any content like the nav or other UI elements */
+}
+
+.hero-image {
+  z-index: 1; /* Image will be in front after the video ends */
 }
