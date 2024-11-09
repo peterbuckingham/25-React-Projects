@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Syne:wght@400..800&display=swap");
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "League Gothic", "Roboto",
@@ -52,6 +50,7 @@ ul {
   align-items: center;
   justify-content: center;
   position: relative; /* Makes sure the video and image are positioned relative to this container */
+  z-index: 1; /* Ensure hero section is behind the intro section */
 }
 
 .hero-image,
@@ -75,6 +74,8 @@ ul {
   flex-wrap: wrap;
   height: 200px;
   width: auto;
+  position: relative; /* Ensure intro section is above the hero section */
+  z-index: 2; /* Make intro section appear above hero section */
 }
 
 .intro-section1 {
@@ -87,6 +88,7 @@ ul {
   border-right: 0px solid white;
   box-sizing: border-box;
 }
+
 .intro-section2 {
   height: 250px;
   width: 50%;
@@ -108,11 +110,30 @@ ul {
   color: white;
   padding: 8px 15px 8px 15px;
   border-radius: 50px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .intro-button:hover {
   background-color: rgb(255, 255, 255);
   border: 5px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
+}
+
+.intro-section {
+  margin-top: -100px;
+  z-index: 3; /* Ensure this section is above the hero section */
+}
+
+.intro-section1 p {
+  font-size: 40px;
+  margin: 20px;
+  color: #DAE2E4;
+  font-family: 'Dela Gothic One', Arial;
+}
+
+.intro-section2 p {
+  font-size: 30px;
+  margin: 30px;
+  color: #DAE2E4;
+  font-family: 'Libre Franklin', Arial;
 }
