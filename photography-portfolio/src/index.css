@@ -139,3 +139,38 @@ ul {
   color: #DAE2E4;
   font-family: 'Libre Franklin', Arial;
 }
+
+/* .....BIO SECTION..... */
+.bioContainer {
+  display: flex;
+  flex-direction: row; /* Ensures elements are placed in a row */
+  background-color: black;
+}
+
+.bioSection {
+  background-color: black;
+  height: 500px;
+  width: 50%; /* Takes up half of the container */
+}
+
+.bioSection p {
+  color: #DAE2E4;
+  font-size: 60px;
+  margin: 80px 20px;
+}
+
+.bioContainer img {
+  width: 420px; /* Set to desired square size */
+  height: 400px; /* Matches the width to make it square */
+  object-fit: cover; /* Ensures the image fills the square container */
+  margin: 100px auto 40px auto; /* Pushes the image to the right */
+  border-radius: 10%;
+}
+
+.bioDivider {
+  width: 5px;
+  height: 540px;
+  background-color: white;
+  z-index: 2;
+}
+

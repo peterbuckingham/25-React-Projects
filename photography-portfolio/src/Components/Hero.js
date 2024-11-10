@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import videobg from "../assets/Final-Comp.mp4";
-import placeholderImage from "../Images/image2.jpg"; // Image before video starts
 import finalImage from "../Images/finalImage.jpg"; // Image to show after video ends
 
 function Hero() {
@@ -17,7 +16,7 @@ function Hero() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setHasVideoStarted(true); // Trigger video start after 5 seconds
-    }, 5000); // 5000ms = 5 seconds delay
+    }, 4000); // 5000ms = 5 seconds delay
 
     // Cleanup the timeout if the component unmounts
     return () => clearTimeout(timer);
@@ -50,13 +49,7 @@ function Hero() {
             className="hero-image"
           />
         )
-      ) : (
-        <img
-          src={placeholderImage}
-          alt="Image before video starts"
-          className="hero-image"
-        />
-      )}
+      ) : null}
     </div>
   );
 }
