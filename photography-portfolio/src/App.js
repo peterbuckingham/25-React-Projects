@@ -4,6 +4,7 @@ import './index.css'
 import Intro from './Components/Intro'
 import LoadingScreen from './Components/LoadingScreen'
 import Bio from './Components/Bio'
+import BioLogos from './Components/BioLogos'
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Hero />
       <Intro />
       <Bio />
+      <BioLogos />
+
       
     </div>
   )
