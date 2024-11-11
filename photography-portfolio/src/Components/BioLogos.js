@@ -1,6 +1,8 @@
 import KavyarLogo from '../Images/Logos/Kavyar.png'
 import WomanManLogo from '../Images/Logos/WM.png'
 import news24Logo from '../Images/Logos/news24.png'
+import MMMLogo from '../Images/Logos/MMM.png'
+import zcreativeLogo from '../Images/Logos/z-creative.png'
 
 function BioLogos() {
   return (
@@ -29,40 +31,20 @@ function BioLogos() {
           alt="Logo 3"
         />
         <img
-          className="marquee__item"
-          src="https://placehold.co/100x100/purple/gold?font=playfair-display/text=4"
+          className="marquee__item MMMLogo"
+          src={MMMLogo}
           width="100"
           height="100"
           alt="Logo 4"
         />
         <img
-          className="marquee__item"
-          src="https://placehold.co/100x100/purple/gold?font=playfair-display/text=5"
+          className="marquee__item zcreativeLogo"
+          src={zcreativeLogo}
           width="100"
           height="100"
           alt="Logo 5"
         />
-        <img
-          className="marquee__item"
-          src="https://placehold.co/100x100/purple/gold?font=playfair-display/text=6"
-          width="100"
-          height="100"
-          alt="Logo 6"
-        />
-        <img
-          className="marquee__item"
-          src="https://placehold.co/100x100/purple/gold?font=playfair-display/text=7"
-          width="100"
-          height="100"
-          alt="Logo 7"
-        />
-        <img
-          className="marquee__item"
-          src="https://placehold.co/100x100/purple/gold?font=playfair-display/text=8"
-          width="100"
-          height="100"
-          alt="Logo 8"
-        />
+
       </div>
       <div className="bioLogoDivider2"></div>
     </div>
