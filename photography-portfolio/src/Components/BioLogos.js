@@ -8,6 +8,7 @@ function BioLogos() {
   return (
     <div className="BioLogoContainer">
       <div className="bioLogoDivider1"></div>
+      <div className='LogoContainer'>
       <div className="marquee marquee--8">
         <img
           className="marquee__item kavyarLogo"
@@ -47,6 +48,8 @@ function BioLogos() {
 
       </div>
       <div className="bioLogoDivider2"></div>
+    </div>
+
     </div>
   );
 }
