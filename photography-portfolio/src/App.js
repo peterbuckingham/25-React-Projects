@@ -5,6 +5,7 @@ import Intro from './Components/Intro'
 import LoadingScreen from './Components/LoadingScreen'
 import Bio from './Components/Bio'
 import BioLogos from './Components/BioLogos'
+import Gallery from './Components/Gallery'
 
 function App() {
   return (
@@ -15,8 +16,7 @@ function App() {
       <Intro />
       <Bio />
       <BioLogos />
-
-      
+      {/* <Gallery /> */}
     </div>
   )
 }

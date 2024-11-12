@@ -257,21 +257,6 @@ ul {
   animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
 }
 
-.marquee__item:nth-child(4n) {
-  border-top-right-radius: 1rem;
-}
-
-.marquee__item:nth-child(4n + 1) {
-  border-bottom-right-radius: 1rem;
-}
-
-.marquee__item:nth-child(4n + 2) {
-  border-bottom-left-radius: 1rem;
-}
-
-.marquee__item:nth-child(4n + 3) {
-  border-top-left-radius: 1rem;
-}
 
 .marquee--8 .marquee__item:nth-of-type(1) {
   --marquee-item-index: 1;
@@ -350,15 +335,17 @@ ul {
 
 .kavyarLogo {
   margin-top: 30px;
+  margin-left: -40px;
 }
 
 .womanManLogo {
   margin-top: 8px;
+  margin-left: -20px;
 }
 
 .news24Logo {
   margin-top: 15px;
-  margin-left: 0px;
+  margin-left: -40px;
 }
 
 .MMMLogo {
@@ -379,5 +366,5 @@ ul {
 }
 
 .cordifoundation {
-  margin-left: 50px;
+  margin-left: 60px;
 }
