@@ -222,6 +222,7 @@ ul {
   );
 }
 
+
 .marquee--8 {
   --marquee-item-width: 100px;
   --marquee-item-height: 100px;
@@ -357,7 +358,7 @@ ul {
 
 .news24Logo {
   margin-top: 15px;
-  margin-left: -40px;
+  margin-left: 0px;
 }
 
 .MMMLogo {
@@ -371,4 +372,12 @@ ul {
   width: 250px;
   margin-left: 50px;
   margin-top: 20px;
+}
+
+.showreellogo {
+  margin-left: 50px;
+}
+
+.cordifoundation {
+  margin-left: 50px;
 }

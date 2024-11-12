@@ -3,6 +3,8 @@ import WomanManLogo from '../Images/Logos/WM.png'
 import news24Logo from '../Images/Logos/news24.png'
 import MMMLogo from '../Images/Logos/MMM.png'
 import zcreativeLogo from '../Images/Logos/z-creative.png'
+import showreellogo from '../Images/Logos/showreel.jpg'
+import cordifoundation from '../Images/Logos/cordi.jpg'
 
 function BioLogos() {
   return (
@@ -42,6 +44,20 @@ function BioLogos() {
           className="marquee__item zcreativeLogo"
           src={zcreativeLogo}
           width="100"
+          height="100"
+          alt="Logo 5"
+        />
+        <img
+          className="marquee__item showreellogo"
+          src={showreellogo}
+          width="110"
+          height="110"
+          alt="Logo 5"
+        />
+        <img
+          className="marquee__item cordifoundation"
+          src={cordifoundation}
+          width="200"
           height="100"
           alt="Logo 5"
         />
