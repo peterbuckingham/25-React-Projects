@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Dela+Gothic+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
 
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 html::-webkit-scrollbar {
   display: none;
@@ -8,10 +7,9 @@ html::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 html {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 body {
   margin: 0;
@@ -20,7 +18,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 .nav {
@@ -222,13 +219,12 @@ ul {
   );
 }
 
-
 .marquee--8 {
   --marquee-item-width: 100px;
   --marquee-item-height: 100px;
   --marquee-duration: 36s;
   --marquee-items: 8;
-    margin: 0px;
+  margin: 0px;
 }
 
 .marquee--3 {
@@ -250,13 +246,15 @@ ul {
     calc(var(--marquee-item-width) * var(--marquee-items)),
     calc(100% + var(--marquee-item-width))
   );
-  --marquee-delay: calc(var(--marquee-duration) / var(--marquee-items) * (var(--marquee-items) - var(--marquee-item-index)) * -1);
+  --marquee-delay: calc(
+    var(--marquee-duration) / var(--marquee-items) *
+      (var(--marquee-items) - var(--marquee-item-index)) * -1
+  );
   position: absolute;
   inset-inline-start: var(--marquee-item-offset);
   transform: translateX(-50%);
   animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
 }
-
 
 .marquee--8 .marquee__item:nth-of-type(1) {
   --marquee-item-index: 1;
@@ -327,11 +325,10 @@ ul {
 }
 
 @keyframes go {
-  to {  
+  to {
     inset-inline-start: calc(var(--marquee-item-width) * -1);
   }
 }
-
 
 .kavyarLogo {
   margin-top: 30px;
@@ -367,4 +364,11 @@ ul {
 
 .cordifoundation {
   margin-left: 60px;
+}
+
+.bioVideo {
+  border-radius: 50px;
+  height: 400px;
+  margin-top: 95px;
+  margin-left: 120px;
 }
