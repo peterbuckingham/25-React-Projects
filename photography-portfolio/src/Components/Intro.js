@@ -9,6 +9,10 @@ function Intro() {
       <button className="intro-button">Contact</button>
       <button className="intro-button">About</button>
       </div>
+      <section id="section07" class="demo">
+        <h1>Scroll Down Button #7</h1>
+        <a href="#section08"><span></span><span></span><span></span></a>
+      </section>
     </div>
   )
 }

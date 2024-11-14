@@ -6,6 +6,7 @@ import zcreativeLogo from '../Images/Logos/z-creative.png'
 import showreellogo from '../Images/Logos/showreel.jpg'
 import cordifoundation from '../Images/Logos/cordi.jpg'
 
+
 function BioLogos() {
   return (
     <div className="BioLogoContainer">

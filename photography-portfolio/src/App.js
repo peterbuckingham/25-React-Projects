@@ -16,7 +16,7 @@ function App() {
       <Intro />
       <Bio />
       <BioLogos />
-      {/* <Gallery /> */}
+      <Gallery />
     </div>
   )
 }
